@@ -29,8 +29,7 @@ function getNoneWeeklyUser() {
 
 function noticeBtnClick() {
   console.log('YL   click  notice');
-  const webhookUrl =
-    'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cebd9399-ac92-4eb7-842f-36932bfd5e87';
+
   chrome.runtime.sendMessage(
     {
       action: 'sendWechatMessage',
